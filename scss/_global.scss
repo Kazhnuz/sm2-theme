@@ -42,7 +42,7 @@ header {
 }
 
 .navbar {
-  box-shadow: $large-shadow;
+  box-shadow: none;
   @include borders();
   border-left: 0;
   border-right: 0;

@@ -553,7 +553,7 @@ header {
       height: auto; }
 
 .navbar {
-  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.33);
+  box-shadow: none;
   border: 0px solid rgba(0, 0, 0, 0);
   border-left: 0;
   border-right: 0;
