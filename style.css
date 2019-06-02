@@ -536,14 +536,19 @@ mark {
   padding: 0; }
 
 main#main-area {
-  background-image: url("img/footer-triangle.png");
-  background-repeat: repeat-x;
-  background-position: center bottom; }
+  background-image: url("img/footer-triangle.png"), url("img/header-triangle2.png");
+  background-repeat: repeat-x, repeat-x;
+  background-position: center bottom, center top;
+  padding-top: 30px;
+  padding-bottom: 30px; }
 
 /*  3.1 - Header */
 header {
-  background: #EEE;
-  margin-bottom: 30px; }
+  background: #EEE; }
+  header #main-logo {
+    background-image: url("img/header-triangle1.png");
+    background-repeat: repeat-x;
+    background-position: center bottom; }
   header h1 {
     border-style: none !important;
     font-weight: 700;
