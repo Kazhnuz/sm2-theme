@@ -1,6 +1,6 @@
 /*
  *  2 - Typography ( _typography.scss )
- *  
+ *
  *  This part of the (s)css handle everything related to the typography
  *  like paragraphs, blockquote, etc.
  *
@@ -20,7 +20,7 @@ body {
 	font-family: OpenSans, sans-serif;
 	text-align: left;
 	font-size:  4mm;
-	line-height: 1.5em; 
+	line-height: 1.5em;
 	color: $color-font;
 	font-weight: 400;
 }
@@ -86,19 +86,19 @@ ol {
   p, em, p em {
     font-weight:300;
   }
-  
+
   img {
     max-width: 100%;
     height: auto;
   }
-  
+
   .article-thumbnail {
     padding-bottom: 1em;
     text-align: center;
     img {
       max-width: 100%;
       height: auto;
-      
+
     }
   }
   .article-excerpt {
@@ -113,7 +113,7 @@ ol {
       margin:0;
     }
   }
-  
+
   .bypass-flex-fontsize {
     font-size: 4mm;
     line-height: 1.5em;
@@ -123,8 +123,8 @@ ol {
 /* 2.3 - Titles */
 
 @mixin title($size, $height, $top, $bottom, $weight) {
-	font-size: $size; 
-	line-height: $height; 
+	font-size: $size;
+	line-height: $height;
 	padding: $top 0 $bottom 0;
 	font-weight: $weight;
 }
@@ -132,12 +132,12 @@ ol {
 h1, h2, h3, h4, h5, h6, h7 {
   font-family: 'Teko';
   text-align: left;
-	font-size: 1em; 
-	line-height: 1.5em; 
+	font-size: 1em;
+	line-height: 1.5em;
 	padding:0;
 	margin:0;
 	font-weight:400;
-	
+
 	&.page-title {
     font-family: Teko;
     color: $color-primary;
@@ -145,14 +145,14 @@ h1, h2, h3, h4, h5, h6, h7 {
     font-weight: 600;
     text-shadow: 2px 2px 0px rgba(0,0,0,.2);
     box-shadow: 0px 2px 0px rgba(0,0,0,.2);
-    margin-bottom: 0.5em; 
+    margin-bottom: 0.5em;
     padding: 0;
     i {
       font-size: 0.55em;
       position: relative;
       top: -0.175em;
     }
-    
+
     &-flex {
       display: flex;
       flex-direction: row;
@@ -160,7 +160,7 @@ h1, h2, h3, h4, h5, h6, h7 {
       & > span, & > i, & > a {
         display: block;
       }
-      
+
       & > a {
         color: $color-primary;
         &:hover, &:focus, &:active {
@@ -213,10 +213,10 @@ hr {
   border-width: 0 0 0 0.2em;
 	border-style: solid;
 	border-radius: 3px;
-	
+
 	margin: -0.75em -0.2em 0.75em -0.2em;
 	padding: 0.75em 1em 0.75em 1em;
-	
+
 	max-width: 100%;
 	border-color: $color-primary;
 }
@@ -229,7 +229,7 @@ pre, .pre, .well-pre {
   @include well();
 	background-color:#EEE;
 	overflow-x: scroll;
-	
+
 	.night-mode & {
     background-color:#222;
     border-color:rgba(255,255,255,0.20);
@@ -243,7 +243,7 @@ pre, .pre, .well-pre {
 mark {
   border-radius: 0.2em;
   padding:0 0.2em 0 0.2em;
-  
+
   background-color: lighten($color-mark, 30%);
   color: inherit;
 }
@@ -278,8 +278,8 @@ mark {
   &-turquoise { @include text-color($color-turquoise); }
   &-yellow { @include text-color($color-yellow); }
   &-brown { @include text-color($color-brown); }
-  &-grey { @include text-color($color-grey); }  
-  
+  &-grey { @include text-color($color-grey); }
+
   &-primary { @include text-color($color-primary); }
   &-secondary { @include text-color($color-secondary); }
   &-warning { @include text-color($color-warning); }
