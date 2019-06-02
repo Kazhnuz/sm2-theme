@@ -352,11 +352,12 @@ h1, h2, h3, h4, h5, h6, h7 {
   font-weight: 400; }
   h1.page-title, h2.page-title, h3.page-title, h4.page-title, h5.page-title, h6.page-title, h7.page-title {
     font-family: Teko;
-    color: #4e63c9;
-    border-bottom: 3px solid #4e63c9;
+    color: #FFF;
+    font-size: 2.8em;
+    border-bottom: 3px solid #FFF;
     font-weight: 600;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.4);
     margin-bottom: 0.5em;
     padding: 0; }
     h1.page-title i, h2.page-title i, h3.page-title i, h4.page-title i, h5.page-title i, h6.page-title i, h7.page-title i {
