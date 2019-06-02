@@ -1,13 +1,13 @@
 /*
  *  1 - Definitions
- *  
+ *
  *  This part of the (s)css contain every definitions, mixins,
  *  and differents unilities that can be used everywhere in the code.
  *
 */
 
 
-$large-shadow: 4px 4px 0px 0px rgba(0, 0, 0, .2);
+$large-shadow: 8px 8px 0px rgba(0, 0, 0, .33);
 $narrow-shadow: 4px 4px 0px 0px rgba(0, 0, 0, .2);
 $inset-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0);
 $inset-shadow-inverted: inset 0px 2px 0px rgba(0, 0, 0, 0);
@@ -73,8 +73,8 @@ $color-font: #444;
   &-turquoise { @include background-color($color-turquoise, #FFF); }
   &-yellow { @include background-color($color-yellow, #FFF); }
   &-brown { @include background-color($color-brown, #FFF); }
-  &-grey { @include background-color($color-grey, #FFF); }  
-  
+  &-grey { @include background-color($color-grey, #FFF); }
+
   &-primary { @include background-color($color-primary, #FFF); }
   &-secondary { @include background-color($color-secondary, #FFF); }
   &-warning { @include background-color($color-warning, #FFF); }
@@ -96,7 +96,7 @@ $color-font: #444;
 select {
   @include borders();
   @include border-radius();
-  
+
   display: block;
   width: 100%;
   height: calc(2.25rem + 2px);
@@ -117,18 +117,18 @@ select {
     @include borders();
     @include border-radius();
   }
-  
+
   &-text {
     background-color: transparent;
     color: #FFF;
     border: none;
     text-shadow: 0px -1px 0px rgba(0,0,0,0.3);
   }
-  
+
   .form-control {
     @include borders();
     @include border-radius();
-    
+
     box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.1);
     &:focus {
       box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.1), inset 0px 0px 0px 2px lighten($color-primary, 20%) ;
