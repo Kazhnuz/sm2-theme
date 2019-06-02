@@ -1356,6 +1356,11 @@ a.list-group-item:hover {
   margin-bottom: 1.333em; }
 
 /* 2.1 - Previews */
+.card-description .card-body {
+  font-size: 4.5mm;
+  font-weight: 300;
+  line-height: 1.5em; }
+
 .card-release .card-body {
   display: flex;
   flex-direction: row; }
@@ -1364,10 +1369,16 @@ a.list-group-item:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-bottom: 0.66em; }
+  padding-bottom: 0.66em;
+  font-style: italic;
+  font-weight: 300; }
 
 .card-release .comic-description {
   padding-left: 1.33em; }
+  .card-release .comic-description p {
+    font-size: 4.5mm;
+    font-weight: 300;
+    line-height: 1.5em; }
 
 /* 2.1.1 - Article list */
 .list-article {
