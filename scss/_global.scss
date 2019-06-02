@@ -1,0 +1,119 @@
+/*
+ *  3 - Global elements ( _global.scss )
+ *  
+ *  This part of the (s)css handle the style of "global" elements
+ *  like the wrapper, the navbars, the header.
+ *
+*/
+
+
+@media (max-width: 767.98px) {
+  body {
+    background: none;
+    padding: 0;
+  }
+}
+
+#wrapper {
+  background-color: #FFF
+}
+
+/*  3.1 - Header */
+
+header {
+  background: #EEE url('img/background.png');
+  margin-bottom:30px;
+  h1 {
+	  border-style:none !important;
+	  font-weight:700;
+	  font-size:1em;
+    line-height:1em;
+	  padding-bottom:0px;
+	  padding:2.33333em;
+    margin:auto;
+    text-align:center;    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.navbar {
+  box-shadow: $large-shadow;
+  @include borders();
+  border-left: 0;
+  border-right: 0;
+  font-weight:800;
+  ul {
+    padding-bottom:0;
+  }
+  @include li-no-margin();
+  
+  .form-control {
+    opacity: 0.3;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, background-color, opacity .15s ease-in-out, background-color .15s ease-in-out, color .15s ease-in-out;
+    @include border-radius();
+    &::placeholder {
+      color: #FFF;
+      transition: color .15s ease-in-out;
+    }
+    &:hover {
+      opacity: 0.7;
+      background-color: #FFF;
+      color: #444;
+      &::placeholder {
+      color: #444;
+      }
+    }
+    &:focus, &:hover:focus {
+      opacity: 1;
+      background-color: #FFF;
+      color: #444;
+      box-shadow: $inset-shadow-inverted;
+      &::placeholder {
+      color: #444;
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+  box-shadow: $narrow-shadow, $inset-shadow;
+}
+
+/*  3.2 - Footer */
+
+footer {
+  margin-top:40px;
+}
+
+/* 3.2.1 - Social Network Buttons */
+
+ul.social {
+  font-size:1.5em;
+  padding-bottom:1em;
+  margin:auto;
+  text-align:center;
+  li {
+    margin:0;
+    list-style: none;
+    display: inline;
+    a {
+      color:#FFFFFF;
+      background-color:#000000;
+      padding:0.3em;
+      padding-left:0.36em;
+      padding-right:0.36em;
+      vertical-align:middle;
+      border-radius:100%;
+      &:hover {
+        color:#000;
+        background-color:#FFF
+      }
+    }
+  }
+}

@@ -1,0 +1,289 @@
+/*
+ *  2 - Typography ( _typography.scss )
+ *  
+ *  This part of the (s)css handle everything related to the typography
+ *  like paragraphs, blockquote, etc.
+ *
+*/
+
+@import 'font-face';
+
+/* 2.2 - Global Typography */
+
+@mixin paragraph() {
+  padding:0;
+  padding-bottom:1.5em;
+  margin: 0;
+}
+
+body {
+	font-family: OpenSans, sans-serif;
+	text-align: left;
+	font-size:  4mm;
+	line-height: 1.5em; 
+	color: $color-font;
+	font-weight: 400;
+}
+
+.night-mode {
+  color:#BBB;
+}
+
+strong {
+	font-weight: 600;
+}
+
+em {
+	font-style: italic;
+}
+
+a {
+  color: $color-link;
+  text-decoration:none;
+  &:hover, &:active {
+    color: $color-link;
+  }
+}
+
+p {
+  @include paragraph();
+  &:last-child {
+    padding-bottom:0;
+  }
+}
+
+ul {
+  @include paragraph();
+  ul {
+    padding-bottom:0;
+  }
+  li {
+    margin-left:1.5em;
+  }
+}
+
+ol {
+  @include paragraph();
+  ol {
+    padding-bottom:0;
+  }
+  li {
+    margin-left:1.5em;
+  }
+}
+
+
+::selection { background: $color-selection; color: #fff; }
+::-moz-selection { background: $color-selection; color: #fff; }
+
+/* 2.2 - Text Wrapper */
+
+.article-content {
+  font-size: calc(4mm + 0.4vw);
+  line-height: 1.5em;
+  padding: 1em;
+  font-weight:300;
+  p, em, p em {
+    font-weight:300;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .article-thumbnail {
+    padding-bottom: 1em;
+    text-align: center;
+    img {
+      max-width: 100%;
+      height: auto;
+      
+    }
+  }
+  .article-excerpt {
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    font-style: italic;
+    font-size: calc(3.5mm + 0.4vw);
+  }
+  .article-author {
+    margin:0;
+    padding:0;
+    .card-meta {
+      margin:0;
+    }
+  }
+  
+  .bypass-flex-fontsize {
+    font-size: 4mm;
+    line-height: 1.5em;
+  }
+}
+
+/* 2.3 - Titles */
+
+@mixin title($size, $height, $top, $bottom, $weight) {
+	font-size: $size; 
+	line-height: $height; 
+	padding: $top 0 $bottom 0;
+	font-weight: $weight;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+  font-family: 'Teko';
+  text-align: left;
+	font-size: 1em; 
+	line-height: 1.5em; 
+	padding:0;
+	margin:0;
+	font-weight:400;
+	
+	&.page-title {
+    font-family: Teko;
+    color: $color-primary;
+    border-bottom: 3px solid $color-primary;
+    font-weight: 600;
+    text-shadow: 2px 2px 0px rgba(0,0,0,.2);
+    box-shadow: 0px 2px 0px rgba(0,0,0,.2);
+    margin-bottom: 0.5em; 
+    padding: 0;
+    i {
+      font-size: 0.55em;
+      position: relative;
+      top: -0.175em;
+    }
+    
+    &-flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      & > span, & > i, & > a {
+        display: block;
+      }
+      
+      & > a {
+        color: $color-primary;
+        &:hover, &:focus, &:active {
+          color: darken($color-primary, 10%);
+        }
+      }
+    }
+  }
+}
+
+h1 {
+  @include title(2.3333333em, 1em, 0.333333em, 0.6em, 700);
+}
+
+h2 {
+  @include title(2em, 1.5em, 0.333333em, 0.4em, 700);
+}
+
+h3 {
+  @include title(1.5em, 1em, 0em, 1em, 700);
+}
+
+h4 {
+  @include title(1.5em, 1em, 0em, 1em, 600);
+}
+
+h5 {
+  @include title(1.333333em, 1em, 0.1em, 1.133333em, 600);
+}
+
+h6 {
+  @include title(1.1em, 1.4em, 0.1em, 1.2em, 600);
+}
+
+/* 2.4 - hr */
+
+hr {
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 1px;
+	border-color: rgba(1,1,1,0.15);
+	border-style: solid;
+	margin: 1.5em;
+}
+
+/* 2.5 - Wells and quotes */
+
+@mixin well() {
+  border-width: 0 0 0 0.2em;
+	border-style: solid;
+	border-radius: 3px;
+	
+	margin: -0.75em -0.2em 0.75em -0.2em;
+	padding: 0.75em 1em 0.75em 1em;
+	
+	max-width: 100%;
+	border-color: $color-primary;
+}
+
+blockquote, .quote, .well {
+  @include well();
+}
+
+pre, .pre, .well-pre {
+  @include well();
+	background-color:#EEE;
+	overflow-x: scroll;
+	
+	.night-mode & {
+    background-color:#222;
+    border-color:rgba(255,255,255,0.20);
+  }
+}
+
+
+
+/* 2.6 - Special styling */
+
+mark {
+  border-radius: 0.2em;
+  padding:0 0.2em 0 0.2em;
+  
+  background-color: lighten($color-mark, 30%);
+  color: inherit;
+}
+
+.night-mode mark {
+  background-color: $color-primary;
+}
+
+.time {
+	font-style: italic;
+	text-align: right;
+	width: 100%;
+	display: block;
+}
+
+/* 2.6.1 - Colored texts */
+
+@mixin text-color($text-color) {
+  color: $text-color;
+}
+
+.text {
+  &-blue { @include text-color($color-blue); }
+  &-violet { @include text-color($color-violet); }
+  &-purple { @include text-color($color-purple); }
+  &-red { @include text-color($color-red); }
+  &-orange { @include text-color($color-orange); }
+  &-green { @include text-color($color-green); }
+  &-skyblue { @include text-color($color-skyblue); }
+  &-dark { @include text-color($color-dark); }
+  &-light { @include text-color($color-light); }
+  &-turquoise { @include text-color($color-turquoise); }
+  &-yellow { @include text-color($color-yellow); }
+  &-brown { @include text-color($color-brown); }
+  &-grey { @include text-color($color-grey); }  
+  
+  &-primary { @include text-color($color-primary); }
+  &-secondary { @include text-color($color-secondary); }
+  &-warning { @include text-color($color-warning); }
+  &-danger { @include text-color($color-danger); }
+  &-info { @include text-color($color-info); }
+  &-success { @include text-color($color-success); }
+}

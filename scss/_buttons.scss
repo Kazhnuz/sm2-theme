@@ -1,0 +1,188 @@
+/*
+ *  5 - Buttons ( _buttons.scss )
+ *  
+ *  This part of the (s)css handle the style of buttons-like and badges.
+ *
+*/
+
+@mixin button-lighten($background-color, $text-color) {
+  background-color: lighten($background-color, 15%); 
+  color:$text-color;
+}
+
+@mixin button-color($background-color, $text-color) {
+  background-color: $background-color;
+  color: $text-color;
+  &, &:not(.disabled):not(:disabled) {
+    &:hover, &:active, &:focus {
+      @include button-lighten($background-color, $text-color);
+    }
+  }
+}
+
+.btn {
+	@include borders();
+	@include border-radius();
+	box-shadow: $large-shadow, $inset-shadow;
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.3);
+	@include button-color($color-light, #111);
+	font-weight: 600;
+  
+  &:hover {
+	box-shadow: $narrow-shadow, $inset-shadow;
+	@include borders();
+	text-decoration: none;
+  }
+  
+  &:active {
+	box-shadow: $inset-shadow-inverted;
+	@include borders();
+	text-decoration: none;
+  }
+}
+
+.btn {
+  &-blue { @include button-color($color-blue, #FFF); }
+  &-violet { @include button-color($color-violet, #FFF); }
+  &-purple { @include button-color($color-purple, #FFF); }
+  &-red { @include button-color($color-red, #FFF); }
+  &-orange { @include button-color($color-orange, #FFF); }
+  &-green { @include button-color($color-green, #FFF); }
+  &-skyblue { @include button-color($color-skyblue, #FFF); }
+  &-dark { @include button-color($color-dark, #FFF); }
+  &-light { @include button-color($color-light, #111); }
+  &-turquoise { @include button-color($color-turquoise, #FFF); }
+  &-yellow { @include button-color($color-yellow, #FFF); }
+  &-brown { @include button-color($color-brown, #FFF); }
+  &-grey { @include button-color($color-grey, #FFF); }
+  
+  &-primary { @include button-color($color-primary, #FFF); }
+  &-secondary { @include button-color($color-secondary, #FFF); }
+  &-warning { @include button-color($color-warning, #FFF); }
+  &-danger { @include button-color($color-danger, #FFF); }
+  &-info { @include button-color($color-info, #FFF); }
+  &-success { @include button-color($color-success, #FFF); }
+}
+
+.btn-group {
+	box-shadow: $large-shadow;
+}
+
+.btn-group .btn {
+	box-shadow: $inset-shadow;
+	@include border-radius();
+	&:not(:first-child) {
+	  border-top-left-radius: 0;
+	  border-bottom-left-radius: 0;
+	}
+	&:not(:last-child) {
+	  border-top-right-radius: 0;
+	  border-bottom-right-radius: 0;
+	}
+}
+
+.btn-group .btn:hover {
+	box-shadow: $inset-shadow;
+}
+
+.btn-group .btn:active, .btn:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active,
+.show > .btn.dropdown-toggle {
+	box-shadow: $inset-shadow-inverted!important;
+	@include borders();
+}
+
+.btn:focus, .btn-primary:focus, .btn-secondary:focus, .btn-danger:focus, .btn-warning:focus, .btn-success:focus, .btn-info:focus, .btn-dark:focus, .btn-light:focus {
+	box-shadow: $narrow-shadow, $inset-shadow, 0px 0px 0px 2px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.page-numbers {
+  @extend .btn;
+  @extend .btn-grey;
+  padding: 0.5em 1em 0.5em 1em;
+  margin-top: 0.1em;
+  color: #FFF;
+  
+  &.dots {
+    border: none;
+    background-color: transparent!important;
+    box-shadow: none;
+    color: #444;
+    text-shadow: none;
+  }
+}
+
+/* 5.1 - Réseaux sociaux */
+
+.share-buttons {
+  margin:15px;
+}
+
+.reagir {
+  text-align:right;
+  .btn {
+    margin-right:0.5em; 
+  }
+}
+
+.btn {
+  &-facebook {@include button-color(#3B5998, #FFF);}
+  &-twitter {@include button-color(#55ACEE, #FFF);}
+  &-googleplus {@include button-color(#d34836, #FFF);}
+  &-diaspora {@include button-color(#313739, #FFF);}
+  &-mastodon {@include button-color(#282c37, #FFF);}
+  &-whatsapp {@include button-color(#43d854, #FFF);}
+  &-linkedin {@include button-color(#0074A1, #FFF);}
+  &-buffer {@include button-color(#444, #FFF);}
+  &-pinterest {@include button-color(#bd081c, #FFF);}
+}
+
+/* 5.2 - Badges */
+
+@mixin badge-color($background-color, $text-color) {
+  background-color: $background-color;
+  color: $text-color;
+    &, &:not(.disabled):not(:disabled) {
+    &:hover, &:active, &:focus, a:hover > &, a:active > &, a:focus > & {
+      @include button-lighten($background-color, $text-color);
+    }
+  }
+}
+
+.badge {
+  @include borders();
+  @include border-radius();
+  text-decoration: none!important;
+  
+  &-pill {
+    border-radius: 10rem;
+  }
+}
+
+.badge {
+  &-blue { @include badge-color($color-blue, #FFF); }
+  &-violet { @include badge-color($color-violet, #FFF); }
+  &-purple { @include badge-color($color-purple, #FFF); }
+  &-red { @include badge-color($color-red, #FFF); }
+  &-orange { @include badge-color($color-orange, #FFF); }
+  &-green { @include badge-color($color-green, #FFF); }
+  &-skyblue { @include badge-color($color-skyblue, #FFF); }
+  &-dark { @include badge-color($color-dark, #FFF); }
+  &-light { @include badge-color($color-light, #111); }
+  &-turquoise { @include badge-color($color-turquoise, #FFF); }
+  &-yellow { @include badge-color($color-yellow, #FFF); }
+  &-brown { @include badge-color($color-brown, #FFF); }
+  &-grey { @include badge-color($color-grey, #FFF); }
+  
+  &-primary { @include badge-color($color-primary, #FFF); }
+  &-secondary { @include badge-color($color-secondary, #FFF); }
+  &-warning { @include badge-color($color-warning, #FFF); }
+  &-danger { @include badge-color($color-danger, #FFF); }
+  &-info { @include badge-color($color-info, #FFF); }
+  &-success { @include badge-color($color-success, #FFF); }
+  
+  &-category { @include badge-color($color-category, #FFF); }
+  &-tag { @include badge-color($color-tag, #FFF); }
+  
+}
+
