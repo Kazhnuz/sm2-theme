@@ -1363,7 +1363,11 @@ a.list-group-item:hover {
 .card-release .date-author {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-bottom: 0.66em; }
+
+.card-release .comic-description {
+  padding-left: 1.33em; }
 
 /* 2.1.1 - Article list */
 .list-article {
