@@ -20,6 +20,12 @@
   padding: 0;
 }
 
+main#main-area {
+  background-image: url('img/footer-triangle.png');
+  background-repeat: repeat-x;
+  background-position: center bottom;
+}
+
 /*  3.1 - Header */
 
 header {
@@ -90,7 +96,7 @@ header {
 /*  3.2 - Footer */
 
 footer {
-  margin-top:40px;
+  
 }
 
 /* 3.2.1 - Social Network Buttons */

@@ -535,6 +535,11 @@ mark {
   margin: 0;
   padding: 0; }
 
+main#main-area {
+  background-image: url("img/footer-triangle.png");
+  background-repeat: repeat-x;
+  background-position: center bottom; }
+
 /*  3.1 - Header */
 header {
   background: #EEE;
@@ -590,9 +595,6 @@ header {
   box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.2), inset 0px -2px 0px rgba(0, 0, 0, 0); }
 
 /*  3.2 - Footer */
-footer {
-  margin-top: 40px; }
-
 /* 3.2.1 - Social Network Buttons */
 ul.social {
   font-size: 1.5em;
