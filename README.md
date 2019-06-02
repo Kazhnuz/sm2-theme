@@ -1,2 +1,3 @@
-# qdouze-bootstrap-theme
-Theme for my tech blog, Quarante-Douze, based on my own bluesky theme
+# sm2-bootstrap-theme
+
+A basic theme created for SM2
