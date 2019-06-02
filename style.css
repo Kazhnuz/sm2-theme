@@ -546,9 +546,10 @@ main#main-area {
 header {
   background: #EEE; }
   header #main-logo {
-    background-image: url("img/header-triangle1.png");
-    background-repeat: repeat-x;
-    background-position: center bottom; }
+    background-image: url("img/header-triangle1.png"), url("img/header-background-temp.jpg");
+    background-repeat: repeat-x, no-repeat;
+    background-position: center bottom, center center;
+    background-size: auto, cover; }
   header h1 {
     border-style: none !important;
     font-weight: 700;
