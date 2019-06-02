@@ -151,7 +151,7 @@ select {
 
 /*
  *  2 - Typography ( _typography.scss )
- *
+ *  
  *  This part of the (s)css handle everything related to the typography
  *  like paragraphs, blockquote, etc.
  *
@@ -716,7 +716,12 @@ ul.social {
   box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0);
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
   font-weight: 600;
-  border-radius: 0; }
+  border-radius: 0;
+  padding: 0.75rem 1.25rem 1.75rem 1.25rem;
+  background-image: url("img/triangleblanc.png");
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  border: 0; }
   .card-header:first-child {
     border-radius: 3px 3px 3px 3px;
     border-bottom-left-radius: 0;
@@ -912,7 +917,7 @@ a.list-group-item:hover {
 
 /*
  *  5 - Buttons ( _buttons.scss )
- *
+ *  
  *  This part of the (s)css handle the style of buttons-like and badges.
  *
 */
@@ -1335,7 +1340,7 @@ a.list-group-item:hover {
 
 /*
  *  6 - Blog Elements ( _blog.scss )
- *
+ *  
  *  All elements that are used for a blog (article previews, etc).
  *  "Commons" elements will be in other parts
 */
