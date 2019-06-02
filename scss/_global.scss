@@ -1,6 +1,6 @@
 /*
  *  3 - Global elements ( _global.scss )
- *  
+ *
  *  This part of the (s)css handle the style of "global" elements
  *  like the wrapper, the navbars, the header.
  *
@@ -15,13 +15,15 @@
 }
 
 #wrapper {
-  background-color: #FFF
+  background: #FFF url('img/background.png');
+  margin: 0;
+  padding: 0;
 }
 
 /*  3.1 - Header */
 
 header {
-  background: #EEE url('img/background.png');
+  background: #EEE;
   margin-bottom:30px;
   h1 {
 	  border-style:none !important;
@@ -31,7 +33,7 @@ header {
 	  padding-bottom:0px;
 	  padding:2.33333em;
     margin:auto;
-    text-align:center;    
+    text-align:center;
     img {
       max-width: 100%;
       height: auto;
@@ -49,7 +51,7 @@ header {
     padding-bottom:0;
   }
   @include li-no-margin();
-  
+
   .form-control {
     opacity: 0.3;
     background-color: rgba(0, 0, 0, 0.3);

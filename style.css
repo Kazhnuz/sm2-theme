@@ -15,7 +15,7 @@
 */
 /*
  *  1 - Definitions
- *  
+ *
  *  This part of the (s)css contain every definitions, mixins,
  *  and differents unilities that can be used everywhere in the code.
  *
@@ -151,7 +151,7 @@ select {
 
 /*
  *  2 - Typography ( _typography.scss )
- *  
+ *
  *  This part of the (s)css handle everything related to the typography
  *  like paragraphs, blockquote, etc.
  *
@@ -520,7 +520,7 @@ mark {
 
 /*
  *  3 - Global elements ( _global.scss )
- *  
+ *
  *  This part of the (s)css handle the style of "global" elements
  *  like the wrapper, the navbars, the header.
  *
@@ -531,11 +531,13 @@ mark {
     padding: 0; } }
 
 #wrapper {
-  background-color: #FFF; }
+  background: #FFF url("img/background.png");
+  margin: 0;
+  padding: 0; }
 
 /*  3.1 - Header */
 header {
-  background: #EEE url("img/background.png");
+  background: #EEE;
   margin-bottom: 30px; }
   header h1 {
     border-style: none !important;
@@ -615,7 +617,7 @@ ul.social {
 
 /*
  *  4 - Cards( _cards.scss )
- *  
+ *
  *  This part of the (s)css handle the style of cards-like elements,
  *  elements that are supposed to handle contents inside a box.
  *
@@ -910,7 +912,7 @@ a.list-group-item:hover {
 
 /*
  *  5 - Buttons ( _buttons.scss )
- *  
+ *
  *  This part of the (s)css handle the style of buttons-like and badges.
  *
 */
@@ -1333,7 +1335,7 @@ a.list-group-item:hover {
 
 /*
  *  6 - Blog Elements ( _blog.scss )
- *  
+ *
  *  All elements that are used for a blog (article previews, etc).
  *  "Commons" elements will be in other parts
 */
