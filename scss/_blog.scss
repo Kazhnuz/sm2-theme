@@ -13,115 +13,15 @@
 
 /* 2.1 - Previews */
 
-.preview-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: flex-start;
-  margin-bottom:1em;
-  padding: 0;
-  width:100%;
-
-  .preview {
-    width: 48%;
-    height:220px;
+.card-release {
+  .card-body {
+    display:flex;
+    flex-direction: row;
   }
-}
-
-.preview {
-  margin:auto;
-  margin-bottom: 1em;
-  &-link {
-    display:block;
-    width:100%;
-    height:100%;
-    padding:0;
-    margin:0;
-    text-decoration:none!important;
-    &:hover .preview-item {
-      background-size: 133% auto;
-	    background-position: center center;
-    }
-  }
-
-  &-item {
-    height: 100%;
-	  width: 100%;
-	  background-size: 100% auto;
-	  background-position: center center;
-	  transition: background-size .5s;
-  }
-}
-
-.preview-overlay {
-	height: 100%;
-	width: 100%;
-	opacity: 1;
-	padding: 0;
-	transition: background .5s;
-	color: #FFF;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: flex-start;
-	text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
-	color: white!important;
-
-	background: linear-gradient(to top, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 60%);
-
-	&:hover {
-	  opacity: 1;
-
-	  h1, h2 {
-	    opacity: 1;
-	    color: #FFF;
-	  }
-
-	  .badge {
-	    background-color: lighten($color-category, 15%);
-	  }
-	}
-
-	.badge {
-	  background-color: $color-category;
-	}
-
-  h1, h2 {
-    max-width:100%;
-    margin:auto;
-    margin-bottom:0px;
-    text-align:left;
-    display:block;
-    font-size:2em;
-    transition: opacity .5s;
-    text-shadow: 1px 1px 0px rgba(0,0,0,1);
-    opacity: 0.6;
-    padding: 0.25em;
-	  color: #FFF;
-  }
-}
-
-.preview-item {
-  .preview-content {
-	  height: 100%;
-	  width: 100%;
-	  background-size: 100% auto;
-	  background-position: center center;
-	  transition: background-size .5s;
-  }
-
-  &:hover .preview-content {
-    background-size: 133% auto;
-	  background-position: center center;
-  }
-}
-
-.preview-categories {
-  padding: 0.5em;
-  .badge {
-    font-size: 1em;
-    text-shadow: none;
+  .date-author {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 

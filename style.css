@@ -151,7 +151,7 @@ select {
 
 /*
  *  2 - Typography ( _typography.scss )
- *  
+ *
  *  This part of the (s)css handle everything related to the typography
  *  like paragraphs, blockquote, etc.
  *
@@ -924,7 +924,7 @@ a.list-group-item:hover {
 
 /*
  *  5 - Buttons ( _buttons.scss )
- *  
+ *
  *  This part of the (s)css handle the style of buttons-like and badges.
  *
 */
@@ -1347,7 +1347,7 @@ a.list-group-item:hover {
 
 /*
  *  6 - Blog Elements ( _blog.scss )
- *  
+ *
  *  All elements that are used for a blog (article previews, etc).
  *  "Commons" elements will be in other parts
 */
@@ -1356,91 +1356,14 @@ a.list-group-item:hover {
   margin-bottom: 1.333em; }
 
 /* 2.1 - Previews */
-.preview-container {
+.card-release .card-body {
+  display: flex;
+  flex-direction: row; }
+
+.card-release .date-author {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: flex-start;
-  margin-bottom: 1em;
-  padding: 0;
-  width: 100%; }
-  .preview-container .preview {
-    width: 48%;
-    height: 220px; }
-
-.preview {
-  margin: auto;
-  margin-bottom: 1em; }
-  .preview-link {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    text-decoration: none !important; }
-    .preview-link:hover .preview-item {
-      background-size: 133% auto;
-      background-position: center center; }
-  .preview-item {
-    height: 100%;
-    width: 100%;
-    background-size: 100% auto;
-    background-position: center center;
-    transition: background-size .5s; }
-
-.preview-overlay {
-  height: 100%;
-  width: 100%;
-  opacity: 1;
-  padding: 0;
-  transition: background .5s;
-  color: #FFF;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-  color: white !important;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 60%); }
-  .preview-overlay:hover {
-    opacity: 1; }
-    .preview-overlay:hover h1, .preview-overlay:hover h2 {
-      opacity: 1;
-      color: #FFF; }
-    .preview-overlay:hover .badge {
-      background-color: #8997db; }
-  .preview-overlay .badge {
-    background-color: #4e63c9; }
-  .preview-overlay h1, .preview-overlay h2 {
-    max-width: 100%;
-    margin: auto;
-    margin-bottom: 0px;
-    text-align: left;
-    display: block;
-    font-size: 2em;
-    transition: opacity .5s;
-    text-shadow: 1px 1px 0px black;
-    opacity: 0.6;
-    padding: 0.25em;
-    color: #FFF; }
-
-.preview-item .preview-content {
-  height: 100%;
-  width: 100%;
-  background-size: 100% auto;
-  background-position: center center;
-  transition: background-size .5s; }
-
-.preview-item:hover .preview-content {
-  background-size: 133% auto;
-  background-position: center center; }
-
-.preview-categories {
-  padding: 0.5em; }
-  .preview-categories .badge {
-    font-size: 1em;
-    text-shadow: none; }
+  justify-content: space-between; }
 
 /* 2.1.1 - Article list */
 .list-article {
