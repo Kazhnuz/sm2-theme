@@ -9,6 +9,7 @@
 */
 
 @mixin card-color($background-color, $text-color) {
+  border-bottom: 4px solid $background-color;
   & > .card-header { background-color: $background-color; color:$text-color; }
 }
 

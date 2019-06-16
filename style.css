@@ -640,81 +640,119 @@ ul.social {
   border: none;
   margin-bottom: 1.2em; }
 
-.card-blue > .card-header {
-  background-color: #4e63c9;
-  color: #FFF; }
+.card-blue {
+  border-bottom: 4px solid #4e63c9; }
+  .card-blue > .card-header {
+    background-color: #4e63c9;
+    color: #FFF; }
 
-.card-violet > .card-header {
-  background-color: #ce4dcd;
-  color: #FFF; }
+.card-violet {
+  border-bottom: 4px solid #ce4dcd; }
+  .card-violet > .card-header {
+    background-color: #ce4dcd;
+    color: #FFF; }
 
-.card-purple > .card-header {
-  background-color: #7951c0;
-  color: #FFF; }
+.card-purple {
+  border-bottom: 4px solid #7951c0; }
+  .card-purple > .card-header {
+    background-color: #7951c0;
+    color: #FFF; }
 
-.card-red > .card-header {
-  background-color: #e33d22;
-  color: #FFF; }
+.card-red {
+  border-bottom: 4px solid #e33d22; }
+  .card-red > .card-header {
+    background-color: #e33d22;
+    color: #FFF; }
 
-.card-orange > .card-header {
-  background-color: #eb790a;
-  color: #FFF; }
+.card-orange {
+  border-bottom: 4px solid #eb790a; }
+  .card-orange > .card-header {
+    background-color: #eb790a;
+    color: #FFF; }
 
-.card-green > .card-header {
-  background-color: #75b82d;
-  color: #FFF; }
+.card-green {
+  border-bottom: 4px solid #75b82d; }
+  .card-green > .card-header {
+    background-color: #75b82d;
+    color: #FFF; }
 
-.card-skyblue > .card-header {
-  background-color: #42a0f3;
-  color: #FFF; }
+.card-skyblue {
+  border-bottom: 4px solid #42a0f3; }
+  .card-skyblue > .card-header {
+    background-color: #42a0f3;
+    color: #FFF; }
 
-.card-dark > .card-header {
-  background-color: #2D2D2D;
-  color: #FFF; }
+.card-dark {
+  border-bottom: 4px solid #2D2D2D; }
+  .card-dark > .card-header {
+    background-color: #2D2D2D;
+    color: #FFF; }
 
-.card-light > .card-header {
-  background-color: #eeeeec;
-  color: #111; }
+.card-light {
+  border-bottom: 4px solid #eeeeec; }
+  .card-light > .card-header {
+    background-color: #eeeeec;
+    color: #111; }
 
-.card-turquoise > .card-header {
-  background-color: #46bd9e;
-  color: #FFF; }
+.card-turquoise {
+  border-bottom: 4px solid #46bd9e; }
+  .card-turquoise > .card-header {
+    background-color: #46bd9e;
+    color: #FFF; }
 
-.card-yellow > .card-header {
-  background-color: #f6d32d;
-  color: #FFF; }
+.card-yellow {
+  border-bottom: 4px solid #f6d32d; }
+  .card-yellow > .card-header {
+    background-color: #f6d32d;
+    color: #FFF; }
 
-.card-brown > .card-header {
-  background-color: #986a44;
-  color: #FFF; }
+.card-brown {
+  border-bottom: 4px solid #986a44; }
+  .card-brown > .card-header {
+    background-color: #986a44;
+    color: #FFF; }
 
-.card-grey > .card-header {
-  background-color: #77767b;
-  color: #FFF; }
+.card-grey {
+  border-bottom: 4px solid #77767b; }
+  .card-grey > .card-header {
+    background-color: #77767b;
+    color: #FFF; }
 
-.card-primary > .card-header {
-  background-color: #4e63c9;
-  color: #FFF; }
+.card-primary {
+  border-bottom: 4px solid #4e63c9; }
+  .card-primary > .card-header {
+    background-color: #4e63c9;
+    color: #FFF; }
 
-.card-secondary > .card-header {
-  background-color: #eb790a;
-  color: #FFF; }
+.card-secondary {
+  border-bottom: 4px solid #eb790a; }
+  .card-secondary > .card-header {
+    background-color: #eb790a;
+    color: #FFF; }
 
-.card-warning > .card-header {
-  background-color: #eb790a;
-  color: #FFF; }
+.card-warning {
+  border-bottom: 4px solid #eb790a; }
+  .card-warning > .card-header {
+    background-color: #eb790a;
+    color: #FFF; }
 
-.card-danger > .card-header {
-  background-color: #e33d22;
-  color: #FFF; }
+.card-danger {
+  border-bottom: 4px solid #e33d22; }
+  .card-danger > .card-header {
+    background-color: #e33d22;
+    color: #FFF; }
 
-.card-info > .card-header {
-  background-color: #42a0f3;
-  color: #FFF; }
+.card-info {
+  border-bottom: 4px solid #42a0f3; }
+  .card-info > .card-header {
+    background-color: #42a0f3;
+    color: #FFF; }
 
-.card-success > .card-header {
-  background-color: #75b82d;
-  color: #FFF; }
+.card-success {
+  border-bottom: 4px solid #75b82d; }
+  .card-success > .card-header {
+    background-color: #75b82d;
+    color: #FFF; }
 
 .card-shadow {
   box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.33), inset 0px -2px 0px rgba(0, 0, 0, 0); }
