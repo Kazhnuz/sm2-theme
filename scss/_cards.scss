@@ -49,6 +49,7 @@
 
 .card-body {
   padding: 1rem;
+  box-shadow: inset 0px 1px 0px rgba(0,0,0,0.22), inset 0px 2px 0px rgba(0,0,0,0.22), inset 0px 3px 0px rgba(0,0,0,0.11);
 }
 
 /* 4.1 - Header and titles */
@@ -165,6 +166,10 @@ section.widget {
       }
     }
   }
+}
+
+.card .list-group {
+  box-shadow: inset 0px 1px 0px rgba(0,0,0,0.22), inset 0px 2px 0px rgba(0,0,0,0.11);
 }
 
 .list-group-item {
