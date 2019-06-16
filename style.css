@@ -636,7 +636,7 @@ ul.social {
 */
 .card {
   border-radius: 3px 3px 3px 3px;
-  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33);
   border: none;
   margin-bottom: 1.2em; }
 
@@ -755,7 +755,7 @@ ul.social {
     color: #FFF; }
 
 .card-shadow {
-  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.33), inset 0px -2px 0px rgba(0, 0, 0, 0); }
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33), inset 0px -2px 0px rgba(0, 0, 0, 0); }
 
 .card-body {
   padding: 1rem; }
@@ -791,7 +791,7 @@ ul.social {
 .card-meta {
   border-radius: 3px 3px 3px 3px;
   padding: 1em;
-  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.33), inset 0px -2px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33), inset 0px -2px 0px rgba(0, 0, 0, 0);
   border: 0;
   background-color: #eeeeec;
   margin-bottom: 1.2em; }
@@ -865,7 +865,7 @@ a.list-group-item:hover {
   border: 0px solid rgba(0, 0, 0, 0);
   border-radius: 3px 3px 3px 3px;
   color: rgba(0, 0, 0, 0.7);
-  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.33); }
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33); }
   .alert-flex {
     display: flex;
     flex-direction: row;
@@ -956,7 +956,7 @@ a.list-group-item:hover {
 /* 4.5 - Breadcrumbs */
 .breadcrumb {
   border-radius: 3px 3px 3px 3px;
-  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.33), inset 0px -2px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33), inset 0px -2px 0px rgba(0, 0, 0, 0);
   border: 0;
   background-color: #eeeeec;
   margin-bottom: 1.2em; }
@@ -972,7 +972,7 @@ a.list-group-item:hover {
 .btn, .page-numbers {
   border: 0px solid rgba(0, 0, 0, 0);
   border-radius: 3px 3px 3px 3px;
-  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.33), inset 0px -2px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33), inset 0px -2px 0px rgba(0, 0, 0, 0);
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
   background-color: #eeeeec;
   color: #111;
@@ -1123,7 +1123,7 @@ a.list-group-item:hover {
     color: #FFF; }
 
 .btn-group {
-  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.33); }
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33); }
 
 .btn-group .btn, .btn-group .page-numbers {
   box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0);
