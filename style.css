@@ -569,6 +569,7 @@ header {
   border: 0px solid rgba(0, 0, 0, 0);
   border-left: 0;
   border-right: 0;
+  padding: 0;
   font-weight: 800; }
   .navbar ul {
     padding-bottom: 0; }
@@ -718,6 +719,9 @@ ul.social {
 .card-shadow {
   box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.33), inset 0px -2px 0px rgba(0, 0, 0, 0); }
 
+.card-body {
+  padding: 1rem; }
+
 /* 4.1 - Header and titles */
 .card-header {
   border: 0px solid rgba(0, 0, 0, 0);
@@ -726,7 +730,7 @@ ul.social {
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
   font-weight: 600;
   border-radius: 0;
-  padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+  padding: 0.5rem 1.00rem 0.5rem 1.0rem;
   border: 0; }
   .card-header:first-child {
     border-radius: 3px 3px 3px 3px;
@@ -809,7 +813,8 @@ section.widget ul {
 
 .list-group-item {
   border: none;
-  background-color: transparent; }
+  background-color: transparent;
+  padding: 0.66rem 1.25rem; }
 
 a.list-group-item:hover {
   border-style: none;
