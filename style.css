@@ -342,6 +342,25 @@ ol {
     line-height: 1.5em; }
 
 /* 2.3 - Titles */
+.page-title {
+  font-family: 'Teko';
+  color: #FFF;
+  border-bottom: 3px solid #FFF;
+  font-weight: 600;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4), 0px 0px 8px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.4);
+  margin-bottom: 0.5em;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .page-title h1, .page-title h2, .page-title h3, .page-title h4, .page-title h5, .page-title h6, .page-title h7 {
+    padding: 0;
+    padding-bottom: 0.1em; }
+  .page-title .btn, .page-title .page-numbers {
+    padding: 0.333rem 0.66rem;
+    box-shadow: none; }
+
 h1, h2, h3, h4, h5, h6, h7 {
   font-family: 'Teko';
   text-align: left;
@@ -351,7 +370,7 @@ h1, h2, h3, h4, h5, h6, h7 {
   margin: 0;
   font-weight: 400; }
   h1.page-title, h2.page-title, h3.page-title, h4.page-title, h5.page-title, h6.page-title, h7.page-title {
-    font-family: Teko;
+    font-family: 'Teko';
     color: #FFF;
     font-size: 2.8em;
     border-bottom: 3px solid #FFF;
