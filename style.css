@@ -1464,6 +1464,11 @@ a.list-group-item:hover {
   .issue-button:hover, .issue-button.hover {
     background-color: #eb790a;
     color: white; }
+  .issue-button .cover-container {
+    height: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
   .issue-button .issue-cover {
     width: 100px;
     height: auto; }
