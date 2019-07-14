@@ -1494,6 +1494,9 @@ a.list-group-item:hover {
   width: 150px;
   height: auto; }
 
+.previous {
+  padding-bottom: 1em; }
+
 /* 2.1.1 - Article list */
 .list-article {
   display: flex;
