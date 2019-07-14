@@ -777,8 +777,9 @@ ul.social {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33), inset 0px -2px 0px rgba(0, 0, 0, 0); }
 
 .card-body {
-  padding: 1rem;
-  box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.22), inset 0px 2px 0px rgba(0, 0, 0, 0.22), inset 0px 3px 0px rgba(0, 0, 0, 0.11); }
+  padding: 1rem; }
+  .card-body:not(:first-child) {
+    box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.22), inset 0px 2px 0px rgba(0, 0, 0, 0.22), inset 0px 3px 0px rgba(0, 0, 0, 0.11); }
 
 /* 4.1 - Header and titles */
 .card-header {
@@ -1444,6 +1445,10 @@ a.list-group-item:hover {
     font-weight: 300;
     line-height: 1.5em; }
 
+.card-release .issue-cover {
+  width: 100px;
+  height: auto; }
+
 .issue-list {
   display: flex;
   flex-direction: row;
@@ -1459,7 +1464,7 @@ a.list-group-item:hover {
   .issue-button:hover, .issue-button.hover {
     background-color: #eb790a;
     color: white; }
-  .issue-button.issue-cover {
+  .issue-button .issue-cover {
     width: 100px;
     height: auto; }
   .issue-button p {
