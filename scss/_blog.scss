@@ -118,8 +118,21 @@
   }
 }
 
-.previous {
+.previous, .fast-navigation {
   padding-bottom:1em;
+  display:flex;
+  flex-direction: row;
+  .fast-navigation-item {
+    flex-grow:1;
+    flex-basis:0;
+    text-align:center;
+    &:first-child {
+      text-align:left;
+    }
+    &:last-child {
+      text-align:right;
+    }
+  }
 }
 
 /* 2.1.1 - Article list */

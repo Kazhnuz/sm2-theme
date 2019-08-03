@@ -59,11 +59,15 @@
 
 	<div class="container">
 
-			<div class="previous"><a href="issue-view.html" class="btn btn-red"><i class="fa fa-angle-left"></i> Retour</a></div>
+			<div class="fast-navigation">
+        <div class="fast-navigation-item left"><a href="#" class="btn btn-grey disabled"><i class="fa fa-angle-left"></i> Début série</a></div>
+        <div class="fast-navigation-item center"><a href="issue-view.html" class="btn btn-red"><i class="fa fa-angle-up"></i> Mega Drive #1</a></div>
+        <div class="fast-navigation-item right"><a href="#" class="btn btn-red">Mega Drive #2 <i class="fa fa-angle-right"></i></a></div>
+      </div>
 
 				<article class="card card-reader card-light issue-description">
 					<div class="card-header headerbar">
-            <div class="headerbar-left">
+            <div class="headerbar-group">
               <div class="btn-group">
                 <a class="btn btn-light"><i class="fa fa-arrow-left"></i></a>
                 <a class="btn btn-light"><i class="fa fa-arrow-right"></i></a>
@@ -72,7 +76,7 @@
                 Page 1
               </button>
             </div>
-            <div class="headerbar-right">
+            <div class="headerbar-group">
               <a class="btn btn-light"><i class="fa fa-refresh"></i></a>
               <a class="btn btn-light" href="lecteur-fullscreen.html"><i class="fa fa-expand"></i></a>
             </div>
@@ -144,9 +148,6 @@
 		</section>
 	</footer>
 </div>
-
-
-
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

@@ -81,7 +81,17 @@
   &.headerbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    .headerbar-group {
+      flex-grow:1;
+      flex-basis:0;
+      text-align:center;
+      &:first-child {
+        text-align:left;
+      }
+      &:last-child {
+        text-align:right;
+      }
+    }
   }
 
   h1, h2, h3, h4, h5, h6, h7, h8, h9, h10  {
