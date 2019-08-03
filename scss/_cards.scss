@@ -78,6 +78,12 @@
     border-top-right-radius: 0;
   }
 
+  &.headerbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   h1, h2, h3, h4, h5, h6, h7, h8, h9, h10  {
     font-size:1.33em;
     text-shadow: 0px -1px 0px rgba(0,0,0,0.3);
@@ -86,6 +92,20 @@
     color:#FFF;
     font-weight:600;
     line-height:1.17em;
+  }
+
+  .btn {
+    box-shadow:none;
+    text-shadow:none;
+    border: 1px solid rgba(0,0,0,0.2);
+    &:hover, &:active {
+      box-shadow:none;
+      border: 1px solid rgba(0,0,0,0.2);
+    }
+  }
+  .btn-group {
+    box-shadow:none;
+    text-shadow:none;
   }
 }
 

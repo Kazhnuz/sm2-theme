@@ -799,6 +799,10 @@ ul.social {
     border-radius: 3px 3px 3px 3px;
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
+  .card-header.headerbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
   .card-header h1, .card-header h2, .card-header h3, .card-header h4, .card-header h5, .card-header h6, .card-header h7, .card-header h8, .card-header h9, .card-header h10 {
     font-size: 1.33em;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
@@ -807,6 +811,16 @@ ul.social {
     color: #FFF;
     font-weight: 600;
     line-height: 1.17em; }
+  .card-header .btn, .card-header .page-numbers {
+    box-shadow: none;
+    text-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.2); }
+    .card-header .btn:hover, .card-header .page-numbers:hover, .card-header .btn:active, .card-header .page-numbers:active {
+      box-shadow: none;
+      border: 1px solid rgba(0, 0, 0, 0.2); }
+  .card-header .btn-group {
+    box-shadow: none;
+    text-shadow: none; }
 
 /* 4.2 - Cards meta */
 .card-meta {
@@ -1552,3 +1566,8 @@ a.list-group-item:hover {
 
 .wp-caption.aligncenter {
   margin: auto; }
+
+.card-reader img {
+  width: 100%;
+  height: auto;
+  display: block; }
