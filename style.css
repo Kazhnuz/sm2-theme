@@ -1571,3 +1571,11 @@ a.list-group-item:hover {
   width: 100%;
   height: auto;
   display: block; }
+
+.card-reader.reader-fullscreen {
+  box-shadow: none;
+  border-bottom: none; }
+  .card-reader.reader-fullscreen img {
+    width: 50%;
+    height: auto;
+    display: block; }

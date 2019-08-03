@@ -12,4 +12,10 @@
 
 - Itération sur le lecteur de comics
 
-  - Deux version : une intégrée, et une "plein écran".
+  - Deux versions : une intégrée, et une "plein écran".
+
+  - Comparé au lecteur actuel de SM2, le choix a été fait de placer les boutons de pages avec l'affichage de la liste des pages. Si cela peut rendre le design un peu déséquilibré (plus d'élément à gauche qu'à droite), cela fait plus de sens sémantiquement. Un bouton a été mis pour passer du mode étendu au mode normal.
+
+  - Le mode étendu affiche le bouton de retour directement dans la barre d'outil, afin de ne pas perdre devoir cliquer deux fois pour retourner sur la page du comics. Il affiche le nom du comics pour deux raison: Premièrement, cela rend plus évident pour l'utilisateur qu'il va retourner sur la page du comics, et deuxièmement pour que le nom soit toujours visible à l'écran même en mode étendu. Il est mis tout à gauche pour des raisons d'habitude (le lecteur s'attendra à ce qu'un tel bouton soit plutôt ici.
+
+  - Le mode étendu affiche deux pages à la fois. Le page suivante/page précédante saute une page pour les afficher par deux, comme la lecteur d'un vrai comic. Faire en sorte de conserver les doubles-pages sera alors primordial ?
