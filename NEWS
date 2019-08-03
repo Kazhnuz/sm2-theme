@@ -1,0 +1,11 @@
+## Changelog
+
+### Semaine n+1
+
+- Tentative de réflexions sur d'autres possibiltiés que le quadrillage comme fond.
+  
+  - Utilisation d'un quadrillage qui n'irait pas jusqu'au bout ( https://imgur.com/a/H7VDAtZ ) : le resultat est très meh.
+
+  - Juste un fond bleu ? Cela semble trop... simpliste ( voir lien plus haut )
+
+  - Pour l'instant, utilisation juste du damier d'origine, histoire de ne pas avoir de régression.
