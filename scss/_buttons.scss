@@ -6,7 +6,7 @@
 */
 
 @mixin button-lighten($background-color, $text-color) {
-  background-color: lighten($background-color, 15%);
+  background-color: lighten($background-color, 10%);
   color:$text-color;
 }
 
@@ -29,14 +29,14 @@
 	font-weight: 600;
 
   &:hover {
-	box-shadow: $narrow-shadow, $inset-shadow;
 	@include borders();
+	box-shadow: $large-shadow, $inset-shadow;
 	text-decoration: none;
   }
 
   &:active {
-	box-shadow: $inset-shadow-inverted;
 	@include borders();
+	box-shadow: $large-shadow, $inset-shadow;
 	text-decoration: none;
   }
 }
