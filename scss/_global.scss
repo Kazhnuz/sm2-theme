@@ -21,22 +21,24 @@
 }
 
 main#main-area {
-  background-image: url('img/footer-triangle.png'), url('img/header-triangle2.png');
-  background-repeat: repeat-x, repeat-x;
-  background-position: center bottom, center top;
-  padding-top:30px;
+  background-image: url('img/footer-triangle.png');
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  padding:0;
   padding-bottom:30px;
+  position:relative;
+  top: -96px;
 }
 
 /*  3.1 - Header */
 
 header {
-  background: #EEE;
-  #main-logo {
-    background-image: url('img/header-triangle1.png'), url('img/header-background-temp.jpg');
-    background-repeat: repeat-x, no-repeat;
-    background-position: center bottom, center center;
+    background-image: url('img/header-background-temp.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: auto, cover;
+  #main-logo {
+      height:300px;
   }
   h1 {
 	  border-style:none !important;
@@ -59,7 +61,6 @@ header {
   @include borders();
   border-left: 0;
   border-right: 0;
-  padding:0;
   font-weight:800;
   ul {
     padding-bottom:0;
@@ -95,6 +96,12 @@ header {
       }
     }
   }
+}
+
+#navbar-category {
+    background-color:rgba(0,0,0,0.35);
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    backdrop-filter: blur(2px);
 }
 
 .dropdown-menu {
