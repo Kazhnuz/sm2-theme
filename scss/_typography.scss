@@ -12,7 +12,7 @@
 
 @mixin paragraph() {
   padding:0;
-  padding-bottom:1.5em;
+  padding-bottom:1.5rem;
   margin: 0;
 }
 
@@ -20,7 +20,7 @@ body {
 	font-family: OpenSans, sans-serif;
 	text-align: left;
 	font-size:  4mm;
-	line-height: 1.5em;
+	line-height: 1.5rem;
 	color: $color-font;
 	font-weight: 400;
 }
@@ -58,7 +58,7 @@ ul {
     padding-bottom:0;
   }
   li {
-    margin-left:1.5em;
+    margin-left:1.5rem;
   }
 }
 
@@ -68,7 +68,7 @@ ol {
     padding-bottom:0;
   }
   li {
-    margin-left:1.5em;
+    margin-left:1.5rem;
   }
 }
 
@@ -125,7 +125,9 @@ ol {
 @mixin title($size, $height, $top, $bottom, $weight) {
 	font-size: $size;
 	line-height: $height;
-	padding: $top 0 $bottom 0;
+	padding: 0;
+    margin:0;
+    margin-bottom: 1.5rem;
 	font-weight: $weight;
 }
 
@@ -196,27 +198,27 @@ h1, h2, h3, h4, h5, h6, h7 {
 }
 
 h1 {
-  @include title(2.3333333em, 1em, 0.333333em, 0.6em, 700);
+  @include title(2.3333333rem, 3rem, 0.333333em, 0.6em, 700);
 }
 
 h2 {
-  @include title(2em, 1.5em, 0.333333em, 0.4em, 700);
+  @include title(2rem, 3rem, 0.333333em, 0.4em, 700);
 }
 
 h3 {
-  @include title(1.5em, 1em, 0em, 1em, 700);
+  @include title(1.5rem, 1.5rem, 0em, 1em, 700);
 }
 
 h4 {
-  @include title(1.5em, 1em, 0em, 1em, 600);
+  @include title(1.5rem, 1.5rem, 0em, 1em, 600);
 }
 
 h5 {
-  @include title(1.333333em, 1em, 0.1em, 1.133333em, 600);
+  @include title(1.333333rem, 1.5rem, 0.1em, 1.133333em, 600);
 }
 
 h6 {
-  @include title(1.1em, 1.4em, 0.1em, 1.2em, 600);
+  @include title(1.1rem, 1.5rem, 0.1em, 1.2em, 600);
 }
 
 /* 2.4 - hr */
