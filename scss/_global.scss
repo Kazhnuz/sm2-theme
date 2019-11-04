@@ -15,17 +15,13 @@
 }
 
 #wrapper {
-  background: #FFF url('img/background.png');
+  background-color: $color-skyblue;
   margin: 0;
   padding: 0;
 }
 
 main#main-area {
-  background-image: url('img/footer-triangle.png');
-  background-repeat: repeat-x;
-  background-position: center bottom;
   padding:0;
-  padding-bottom:30px;
   position:relative;
   top: -96px;
 }
