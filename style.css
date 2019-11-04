@@ -630,8 +630,8 @@ mark {
 
 main#main-area {
   padding: 0;
-  position: relative;
-  top: -96px;
+  margin-top: -128px;
+  z-index: 500;
 }
 
 /*  3.1 - Header */
@@ -640,9 +640,24 @@ header {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: auto, cover;
+  position: relative;
+}
+header::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' viewBox='0 0 100 128' fill='rgb(114,173,238)' fill-opacity='1'%3E%3Cpolygon points='0,128 100,128 0,0'%3E%3C/polygon%3E%3C/svg%3E");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  content: "";
+  height: 128px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+  bottom: 0;
 }
 header #main-logo {
-  height: 300px;
+  height: 344px;
 }
 header h1 {
   border-style: none !important;
@@ -709,10 +724,29 @@ header h1 img {
 }
 
 .dropdown-menu {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33), inset 0px -2px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4), inset 0px -2px 0px rgba(0, 0, 0, 0);
 }
 
 /*  3.2 - Footer */
+footer {
+  position: relative;
+  padding-bottom: 32px;
+}
+footer::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' viewBox='0 0 100 128' fill='rgb(25,16,35)' fill-opacity='1'%3E%3Cpolygon points='0,128 100,128 0,0'%3E%3C/polygon%3E%3C/svg%3E");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  content: "";
+  height: 128px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+  top: -128px;
+}
+
 /* 3.2.1 - Social Network Buttons */
 ul.social {
   font-size: 1.5em;
@@ -750,7 +784,7 @@ ul.social li a:hover {
 */
 .card {
   border-radius: 3px 3px 3px 3px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
   border: none;
   margin-bottom: 1.2em;
 }
@@ -890,7 +924,7 @@ ul.social li a:hover {
 }
 
 .card-shadow {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33), inset 0px -2px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4), inset 0px -2px 0px rgba(0, 0, 0, 0);
 }
 
 .card-body {
@@ -965,7 +999,7 @@ ul.social li a:hover {
 .card-meta {
   border-radius: 3px 3px 3px 3px;
   padding: 1em;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33), inset 0px -2px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4), inset 0px -2px 0px rgba(0, 0, 0, 0);
   border: 0;
   background-color: #eeeeec;
   margin-bottom: 1.2em;
@@ -1058,7 +1092,7 @@ a.list-group-item:hover {
   border: 0px solid rgba(0, 0, 0, 0);
   border-radius: 3px 3px 3px 3px;
   color: rgba(0, 0, 0, 0.7);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
 .alert-flex {
   display: flex;
@@ -1154,7 +1188,7 @@ a.list-group-item:hover {
 /* 4.5 - Breadcrumbs */
 .breadcrumb {
   border-radius: 3px 3px 3px 3px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33), inset 0px -2px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4), inset 0px -2px 0px rgba(0, 0, 0, 0);
   border: 0;
   background-color: #eeeeec;
   margin-bottom: 1.2em;
@@ -1172,7 +1206,7 @@ a.list-group-item:hover {
 .btn, .page-numbers {
   border: 0px solid rgba(0, 0, 0, 0);
   border-radius: 3px 3px 3px 3px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33), inset 0px -2px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4), inset 0px -2px 0px rgba(0, 0, 0, 0);
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
   background-color: #f4f5ef;
   color: #111;
@@ -1184,12 +1218,12 @@ a.list-group-item:hover {
 }
 .btn:hover, .page-numbers:hover {
   border: 0px solid rgba(0, 0, 0, 0);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33), inset 0px -2px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4), inset 0px -2px 0px rgba(0, 0, 0, 0);
   text-decoration: none;
 }
 .btn:active, .page-numbers:active {
   border: 0px solid rgba(0, 0, 0, 0);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33), inset 0px -2px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4), inset 0px -2px 0px rgba(0, 0, 0, 0);
   text-decoration: none;
 }
 
@@ -1347,7 +1381,7 @@ a.list-group-item:hover {
 }
 
 .btn-group {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 .btn-group .btn, .btn-group .page-numbers {
@@ -1375,7 +1409,7 @@ a.list-group-item:hover {
 }
 
 .btn:focus, .page-numbers:focus, .btn-primary:focus, .btn-secondary:focus, .btn-danger:focus, .btn-warning:focus, .btn-success:focus, .btn-info:focus, .btn-dark:focus, .btn-light:focus {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33), inset 0px -2px 0px rgba(0, 0, 0, 0), 0px 0px 0px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4), inset 0px -2px 0px rgba(0, 0, 0, 0), 0px 0px 0px 2px rgba(0, 0, 0, 0.3);
   outline: none;
 }
 

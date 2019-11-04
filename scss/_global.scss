@@ -6,6 +6,9 @@
  *
 */
 
+@import 'angled_edges';
+
+$angled_size: 128;
 
 @media (max-width: 767.98px) {
   body {
@@ -22,8 +25,8 @@
 
 main#main-area {
   padding:0;
-  position:relative;
-  top: -96px;
+  margin-top: -1px * $angled_size;
+  z-index: 500;
 }
 
 /*  3.1 - Header */
@@ -33,8 +36,9 @@ header {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: auto, cover;
+    @include angled-edge('inside bottom', 'upper right', $color-skyblue, $angled_size);
   #main-logo {
-      height:300px;
+      height:216px + ($angled_size * 1px);
   }
   h1 {
 	  border-style:none !important;
@@ -107,7 +111,8 @@ header {
 /*  3.2 - Footer */
 
 footer {
-
+    @include angled-edge('outside top', 'upper right', $color-dark, $angled_size);
+    padding-bottom:32px;
 }
 
 /* 3.2.1 - Social Network Buttons */
