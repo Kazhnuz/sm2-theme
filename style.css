@@ -558,9 +558,14 @@ header {
         color: #444; }
 
 #navbar-category {
-  background-color: rgba(0, 0, 0, 0.35);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(2px); }
+  #navbar-category a {
+    color: #FFF;
+    border-radius: 0.5rem; }
+    #navbar-category a:hover {
+      background-color: rgba(255, 255, 255, 0.2); }
 
 .dropdown-menu {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4), inset 0px -2px 0px rgba(0, 0, 0, 0); }
