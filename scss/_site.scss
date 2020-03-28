@@ -94,6 +94,42 @@
   }
 }
 
+.issue-card {
+  border:0;
+  margin:15px;
+  
+  .issue-info {
+    padding:15px;
+    padding-bottom:0;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1em;
+    padding-top: 0.2mm;
+    padding-bottom:0;
+    font-weight: 600;
+  }
+
+  .btn {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .issue-actions {
+    display:flex;
+    width:100%;
+    margin:0;
+    padding:0;
+    align-items: stretch;
+    a {
+      display:box;
+      flex-grow: 1;
+    }
+  }
+
+}
+
 .issue-description {
   .card-body {
     display:flex;
