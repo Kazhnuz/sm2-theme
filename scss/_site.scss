@@ -1,15 +1,11 @@
 /*
- *  6 - Blog Elements ( _blog.scss )
+ *  6 - Content Elements ( _site.scss )
  *
- *  All elements that are used for a blog (article previews, etc).
+ *  All elements that are used for the content of the site.
  *  "Commons" elements will be in other parts
 */
 
 /* 1.1 - Comment area */
-
-.comment {
-  margin-bottom: 1.333em;
-}
 
 /* 2.1 - Previews */
 
@@ -168,41 +164,6 @@
 
 /* 2.1.1 - Article list */
 
-.list-article {
-  display: flex;
-  flex-direction: row;
-  &-thumbnail {
-    display: block;
-    padding-top: 1.5em;
-    max-width: 200px;
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-  }
-
-  &-main {
-    width: 100%;
-    padding-left:1em;
-  }
-  &-title {
-    font-family: Teko;
-    font-weight: 600;
-    margin-bottom: 0em;
-    a {
-      color: #444;
-    }
-  }
-  &-metadata {
-    display:flex;
-    justify-content: space-between;
-  }
-
-  &-content {
-    font-style: italic;
-  }
-}
-
 .navigation {
   .pagination {
     padding-top: 2em;
@@ -213,31 +174,6 @@
 }
 
 /* 3. Article mixts */
-
-.article-taxonomies {
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-  .badge:not(:last-child) {
-    margin-right:0.5em;
-  }
-}
-
-.wp-caption {
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  &-text {
-    font-size: 0.9em;
-    font-style: italic;
-  }
-
-  &.aligncenter {
-    margin: auto;
-  }
-}
 
 .card-reader {
   img {
